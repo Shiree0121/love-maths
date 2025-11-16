@@ -18,12 +18,39 @@
     <!-- outta card section -->
     <div class="game-area">
         <img class="logo" src="assets/Images/logo.png" alt="Logo"> Love Maths
+
+         <div class="game-area">
+        <div class="controls-area">
+            <button data-type="addition" class="btn btn--big btn--green" title="Addition" aria-label="Addition">
+                <i class="fas fa-plus"></i>
+            </button>
+            <button data-type="subtract" class="btn btn--big btn--blue" title="Subtraction" aria-label="Subtraction">
+                <i class="fas fa-minus"></i>
+            </button>
+            <button data-type="multiply" class="btn btn--big btn--orange" title="Multiplication" aria-label="Multiplication">
+                <i class="fas fa-times"></i>
+            </button>
+            <button data-type="division" class="btn btn--big btn--red" title="Division" aria-label="Division">
+                <i class="fas fa-divide"></i>
+            </button>
+        </div>
+        <div class="question-area">
+            <span id="operand1">0</span>
+            <span id="operator">x</span>
+            <span id="operand2">0</span>
+            <span>=</span>
+            <p class="answer-message">Enter Answer:</p>
+            <label for="answer-box" class="visually-hidden">Answer</label>
+            <input id="answer-box" type="number" title="Enter your answer" placeholder="Type your answer" aria-label="Answer">
+        </div>
+        <button data-type="submit" class="btn btn--gray">Submit Answer</button>
+    </div>
      </div>
 
     <!-- section for score board -->
     <div class="score board">
-        <div class="score">Score: <span class="score-value">0</span></div>
-        <div class="high-score">High Score: <span class="high-score-value">0</span></div>
+        <p class="scores">Correct Answer><span id="score">0</span></p>
+        <p class="scores">Incorrect Answer><span id="incorrect">0</span></p> 
     </div>
 
 
